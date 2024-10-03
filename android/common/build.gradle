@@ -20,11 +20,11 @@ plugins {
 
 android {
     namespace 'com.benoitletondor.pixelminimalwatchface.common'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         minSdk 25
-        targetSdk 32
+        targetSdk 34
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -50,13 +50,13 @@ android {
 dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
-    api 'androidx.activity:activity-ktx:1.6.1'
-    api "androidx.activity:activity-compose:1.6.1"
+    api 'androidx.activity:activity-ktx:1.9.2'
+    api "androidx.activity:activity-compose:1.9.2"
 
-    api 'com.google.android.gms:play-services-wearable:18.0.0'
+    api 'com.google.android.gms:play-services-wearable:18.2.0'
 
     implementation platform("androidx.compose:compose-bom:$compose_bom")
     implementation 'androidx.compose.foundation:foundation'
 
-    implementation 'androidx.navigation:navigation-runtime-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.8.2'
 }
